@@ -1872,30 +1872,13 @@ input, select, textarea {
 						outline: 0;
 					}
 
-		@media screen and (max-width: 736px) {
+		
+		
 
-			#header {
-				height: 2.5em;
-				line-height: 2.5em;
+		@media screen and (max-width: 384px) {
+			.home-nav-link {
+				display: none !important;
 			}
-
-				#header h1 {
-					text-align: center;
-					position: relative;
-					left: 0;
-					top: 0;
-					height: 2.5em;
-					line-height: 2.5em;
-				}
-
-					#header h1 a {
-						font-size: 1em;
-					}
-
-				#header nav {
-					display: none;
-				}
-
 		}
 
 	body {
@@ -2163,7 +2146,7 @@ input, select, textarea {
 		}
 
 /* Footer */
-
+	/*
 	#footer {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2206,16 +2189,47 @@ input, select, textarea {
 				border-left-color: rgba(185, 186, 187, 0.2);
 				font-size: 0.9em;
 			}
+		*/
 
-		#icon-list {
+		#footer {
+			margin: 0;
+			line-height: 1em;
+			padding: 1.5em;
+			background: #39454b;
+			color: rgba(185, 186, 187, 0.5);
+			overflow: hidden;
+		}
+
+		#footer a:hover {
+			color: #b9babb;
+		}
+
+		.social-container {
 			display: flex;
 			flex-direction: row;
-			justify-content: center;
+			justify-content: space-between;
+			margin: 0px 20%;
 		}
 
-		.resume {
-			align-self: flex-end;
+		.social {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
 		}
+
+		.social a, .resume a {
+			color: rgba(185, 186, 187, 0.5); 
+			width: 2em;
+    		height: 2em;
+    		line-height: 2em;
+    		font-size: 1.5em;
+		}
+
+		.resume-text {
+			padding-left: 10px;
+		}
+		
+	
 		
 		@media screen and (max-width: 1000px) {
 
