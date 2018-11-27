@@ -47,11 +47,11 @@
 						<li class="specific-skills slideUp"><img class="skills-img" src="images/javascript.svg"></li>
 						<li class="specific-skills slideUp"><img class="skills-img" src="images/html5.svg"></li>
 						<li class="specific-skills slideUp"><img class="skills-img" src="images/css3.svg"></li>
-						<li class="specific-skills slideUp"><img class="skills-img" src="images/jquery.svg"></li>
+						<li class="specific-skills slideUp"><img class="skills-img" src="images/firebase.svg"></li>
 						<li class="specific-skills slideUp"><img class="skills-img" src="images/bootstrap.svg"></li>
 						<li class="specific-skills slideUp"><img class="skills-img" src="images/git.svg"></li>
 						<li class="specific-skills slideUp"><img class="skills-img" src="images/github.svg"></li>
-						<li class="specific-skills slideUp"><img class="skills-img" src="images/firebase.svg"></li>
+						<li class="specific-skills slideUp"><img class="skills-img" src="images/jquery.svg"></li>
 					</ul>
 				</div>
 				<a href="#two" class="button style2 down anchored">Next</a>
@@ -67,38 +67,46 @@
 					<!-- Gallery  -->
 						<div class="gallery">
 							<article class="from-left">
-								<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a>
+								<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/scheduler.png" title="The Anonymous Red" alt="" /></a>
+								<h3>Meeting Scheduler</h3>
+								<div class="portfolio-text">	
+									<a href="https://music-box-f835a.firebaseapp.com/">Demo</a>
+									<a href="https://github.com/BrianArchibald/Scheduler">Code</a>
+								</div>
+							</article>
+							<article class="from-right">
+								<a href="https://music-box-f835a.firebaseapp.com/" class="image fit"><img src="images/thumbs/musicbox.png" title="The Anonymous Red" alt="" /></a>
 								<h3>Music Box</h3>
 								<div class="portfolio-text">	
 									<a href="https://music-box-f835a.firebaseapp.com/">Demo</a>
 									<a href="https://github.com/BrianArchibald/AudioPlayer">Code</a>
 								</div>
 							</article>
-							<article class="from-right">
-								<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
+							<article class="from-left">
+								<a href="https://lawn-894dc.firebaseapp.com/" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
 								<h3>CR Landscaping</h3>
 								<div class="portfolio-text">
 									<a href="https://lawn-894dc.firebaseapp.com/">Demo</a>
 									<a href="https://github.com/BrianArchibald/Lawn">Code</a>
 								</div>
 							</article>
-							<article class="from-left">
-								<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
+							<article class="from-right">
+								<a href="https://radiant-sands-39183.herokuapp.com/" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
 								<h3>My Recipe</h3>
 								<div class="portfolio-text">
 									<a href="https://radiant-sands-39183.herokuapp.com/">Demo</a>
 									<a href="https://github.com/BrianArchibald/Recipe">Code</a>
 								</div>
 							</article>
-							<article class="from-right">
-								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
+							<article class="from-left">
+								<a href="https://broker-site.firebaseapp.com/" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
 								<h3>Brokers</h3>
 								<div class="portfolio-text">
 									<a href="https://broker-site.firebaseapp.com/">Demo</a>
 									<a href="https://github.com/BrianArchibald/Broker">Code</a>
 								</div>
 							</article>
-				
+
 						</div>
 
 				</div>
@@ -111,8 +119,8 @@
 						<h2>Who I Am</h2>
 					</header>
 					<div class="about-content">
-						<p>After working to ensure the safety of children for several years as a social worker, I decided to apply my love of technology and analytical thinking towards becoming a web developer. I am a lifelong learner and have a history of successful self-guided learning including becoming proficient in Spanish and advancing to the top 3% of rated tournament chess players in the state.</p>
-						<img src="images/self.jpg" alt="Brian Archibald">
+						<p class="about-text">After working to ensure the safety of children for several years as a social worker, I decided to apply my love of technology and analytical thinking towards becoming a web developer. I am a lifelong learner and have a history of successful self-guided learning including becoming proficient in Spanish and advancing to the top 3% of rated tournament chess players in the state.</p>
+						<img class="self-photo" src="images/self.jpg" alt="Brian Archibald">
 					</div>
 				</div>
 				<a href="#work" class="button style2 down anchored">Next</a>
@@ -126,7 +134,7 @@
 						<p>Feel free to send me a message here or contact me with any of the links below.</p>
 					</header>
 					<div class="box">
-						<form method="post" action="#">
+						<form id="gform" method="POST" data-email="example@email.net" action=action="https://script.google.com/macros/s/AKfycbw2SvOEBy57DnZEPuP_OHjFDyFnRXJuFKo0MD_Irg/exec">
 							<div class="fields">
 								<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
 								<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
@@ -195,6 +203,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script data-cfasync="false" type="text/javascript"
+  					src="assets/js/form-submission-handler.js"></script>
 
 	</body>
 </html>

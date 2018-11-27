@@ -1443,6 +1443,9 @@ input, select, textarea {
 				justify-content: space-between;
 				margin: 0 2.7em 2.2em 2.7em;
 			}
+			.portfolio-text a {
+				color: #03007d;
+			}
 
 			.gallery article:nth-last-child(1n) {
 				-moz-transition-delay: 0.05s;
@@ -1872,6 +1875,10 @@ input, select, textarea {
 						outline: 0;
 					}
 
+					#header nav ul li a:hover {
+						color: #c1c1c1;
+					}
+
 		
 		
 
@@ -1984,13 +1991,21 @@ input, select, textarea {
 			.skills {
 				display: flex;
 				flex-direction: row;
+				flex-wrap: wrap;
+				filter: invert(0.18) sepia(0) saturate(3) hue-rotate(182deg);
 			}
+
+			.skills li:nth-child(n+5) {
+				padding-top: 1.2em;
+			}
+
 			.specific-skills {
 				margin: 0 .7em;
 			}
 
 			.skills-img {
 				width: 3em;
+				filter: invert(0.18) sepia(0) saturate(3) hue-rotate(182deg);
 			}
 
 			.main.style2.left {
@@ -2069,7 +2084,7 @@ input, select, textarea {
 		@media screen and (max-width: 1920px) {
 
 			.main.style2 .content {
-				width: 52%;
+				/*width: 52%;*/
 			}
 
 		}
@@ -2298,22 +2313,29 @@ input, select, textarea {
 		background-position: top left, center center;
 	}
 	#about-box {
-		width: 73%;
+		/*width: 73%;*/
 	}
 
 	.about-content {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 	.about-content p {
 		font-size: 17px;
 	}
 
+	.about-text {
+		padding-bottom: 1.5em;
+	}
+
 	.about-content img {
 		max-width: 13rem;
 		max-height: 13rem;
-		margin-left: 2em;
+		align-self: center;
+		margin: auto;
+
 	}
 
 /* Contact */
