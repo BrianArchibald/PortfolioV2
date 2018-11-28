@@ -83,7 +83,7 @@
 								</div>
 							</article>
 							<article class="from-left">
-								<a href="https://lawn-894dc.firebaseapp.com/" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
+								<a href="https://lawn-894dc.firebaseapp.com/" class="image fit"><img src="images/thumbs/lawn.png" title="Airchitecture II" alt="" /></a>
 								<h3>CR Landscaping</h3>
 								<div class="portfolio-text">
 									<a href="https://lawn-894dc.firebaseapp.com/">Demo</a>
@@ -91,7 +91,7 @@
 								</div>
 							</article>
 							<article class="from-right">
-								<a href="https://radiant-sands-39183.herokuapp.com/" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
+								<a href="https://radiant-sands-39183.herokuapp.com/" class="image fit"><img src="images/thumbs/recipe2.png" title="Air Lounge" alt="" /></a>
 								<h3>My Recipe</h3>
 								<div class="portfolio-text">
 									<a href="https://radiant-sands-39183.herokuapp.com/">Demo</a>
@@ -99,7 +99,7 @@
 								</div>
 							</article>
 							<article class="from-left">
-								<a href="https://broker-site.firebaseapp.com/" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
+								<a href="https://broker-site.firebaseapp.com/" class="image fit"><img src="images/thumbs/broker.png" title="Carry on" alt="" /></a>
 								<h3>Brokers</h3>
 								<div class="portfolio-text">
 									<a href="https://broker-site.firebaseapp.com/">Demo</a>
@@ -134,16 +134,21 @@
 						<p>Feel free to send me a message here or contact me with any of the links below.</p>
 					</header>
 					<div class="box">
-						<form id="gform" method="POST" data-email="example@email.net" action=action="https://script.google.com/macros/s/AKfycbw2SvOEBy57DnZEPuP_OHjFDyFnRXJuFKo0MD_Irg/exec">
+						<form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+    						action="https://script.google.com/macros/s/AKfycbw2SvOEBy57DnZEPuP_OHjFDyFnRXJuFKo0MD_Irg/exec">
 							<div class="fields">
-								<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
-								<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
-								<div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
+								<div class="field half"><input id="name" type="text" name="name" placeholder="Name" /></div>
+								<div class="field half"><input id="email" type="email" name="email" placeholder="Email" /></div><span id="email-invalid" style="display:none">Must be a valid email address</span>
+								<div class="field"><textarea id="message" name="message" placeholder="Message" rows="6"></textarea></div>
 							</div>
 							<ul class="actions special">
 								<li><input type="submit" value="Send Message" /></li>
 							</ul>
 						</form>
+						<div style="display:none;" id="thankyou_message" >
+					      <h2 class="pure-group">Thanks for contacting me.
+					        I will get back to you soon!</h2>
+					    </div>
 					</div>
 				</div>
 			</section>
