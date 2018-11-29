@@ -1446,7 +1446,8 @@ input, select, textarea {
 				margin: 0 2.7em 2.2em 2.7em;
 			}
 			.portfolio-text a {
-				color: #03007d;
+				color: #100e3e;
+				text-decoration: none;
 			}
 
 			.gallery article:nth-last-child(1n) {
@@ -1839,10 +1840,13 @@ input, select, textarea {
 		#header h1 {
 			position: absolute;
 			left: 1em;
-			top: 0;
 			height: 3em;
 			line-height: 3em;
 			cursor: default;
+			font-family: 'Aref Ruqaa', serif;
+			letter-spacing: 2px;
+			font-size: 24px;
+			top: -9px;
 		}
 
 			#header h1 a {
@@ -1881,6 +1885,21 @@ input, select, textarea {
 						color: #c1c1c1;
 					}
 
+		@media screen and (max-width: 1281px) {
+
+			#header h1 {
+				font-size: 24px;
+				top: -13px;
+			}
+		}
+
+		@media screen and (max-width: 737px) {
+
+			#header h1 {
+				font-size: 21px;
+				top: -10px;
+			}
+		}
 		
 		
 
@@ -1991,10 +2010,6 @@ input, select, textarea {
 			}
 
 			.skills {
-				/*display: flex;
-				flex-direction: row;
-				flex-wrap: wrap;
-				*/
 				display: grid;
 				grid-template-columns: 1fr 1fr 1fr 1fr;
 				filter: invert(0.18) sepia(0) saturate(3) hue-rotate(182deg);
@@ -2006,7 +2021,6 @@ input, select, textarea {
 
 			.specific-skills {
 				margin: 0 .7em;
-				/*flex: 1 0 17%; */
 			}
 
 			.skills-img {
@@ -2179,50 +2193,6 @@ input, select, textarea {
 		}
 
 /* Footer */
-	/*
-	#footer {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		-moz-justify-content: space-between;
-		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between;
-		justify-content: space-between;
-		position: relative;
-		margin: 0;
-		line-height: 1em;
-		padding: 1.5em;
-		background: #39454b;
-		color: rgba(185, 186, 187, 0.5);
-		overflow: hidden;
-	}
-
-		#footer > * {
-			margin-bottom: 0;
-		}
-
-		#footer a {
-			color: inherit;
-		}
-
-			#footer a:hover {
-				color: #b9babb;
-			}
-
-		#footer ul.menu {
-			margin: 0;
-		}
-
-			#footer ul.menu li {
-				border-left-color: rgba(185, 186, 187, 0.2);
-				font-size: 0.9em;
-			}
-		*/
 
 		#footer {
 			margin: 0;
@@ -2329,9 +2299,6 @@ input, select, textarea {
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
-	}
-	#about-box {
-		/*width: 73%;*/
 	}
 
 	.about-content {
